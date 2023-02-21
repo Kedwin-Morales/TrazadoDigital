@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>320</width>
+    <height>450</height>
+   </rect>
+  </property>
+  <property name="minimumSize">
+   <size>
+    <width>320</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="maximumSize">
+   <size>
+    <width>400</width>
+    <height>450</height>
+   </size>
+  </property>
+  <property name="windowTitle">
+   <string>MainWindow</string>
+  </property>
+  <property name="styleSheet">
+   <string notr="true"/>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <property name="styleSheet">
+    <string notr="true"/>
+   </property>
+   <layout class="QVBoxLayout" name="verticalLayout">
+    <property name="spacing">
+     <number>0</number>
+    </property>
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item>
+     <widget class="QFrame" name="frame">
+      <property name="styleSheet">
+       <string notr="true">QFrame{
+
+
+border: 0px solid rgb(0, 0, 0);
+
+background-color: qlineargradient(spread:reflect, x1:0.516, y1:0, x2:0.513846, y2:1, stop:0 rgb(50, 150, 130,100%), stop:1 rgb(255, 255, 255));
+
+border-radius:20px;
+
+}</string>
+      </property>
+      <property name="frameShape">
+       <enum>QFrame::StyledPanel</enum>
+      </property>
+      <property name="frameShadow">
+       <enum>QFrame::Raised</enum>
+      </property>
+      <widget class="QLabel" name="label">
+       <property name="geometry">
+        <rect>
+         <x>100</x>
+         <y>20</y>
+         <width>128</width>
+         <height>111</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color: rgb(0, 255, 255,0%);
+border: None;
+}
+</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="pixmap">
+        <pixmap>Icons/gafas.png</pixmap>
+       </property>
+       <property name="scaledContents">
+        <bool>true</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_2">
+       <property name="geometry">
+        <rect>
+         <x>116</x>
+         <y>130</y>
+         <width>101</width>
+         <height>30</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot; MS Shell Dlg 2&quot;;
+background-color: rgba(0,0,0,0%);
+border:0px;</string>
+       </property>
+       <property name="text">
+        <string>USUARIO</string>
+       </property>
+       <property name="textFormat">
+        <enum>Qt::AutoText</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="label_3">
+       <property name="geometry">
+        <rect>
+         <x>103</x>
+         <y>230</y>
+         <width>131</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">font: 75 14pt &quot; MS Shell Dlg 2&quot;;
+background-color: rgba(0,0,0,0%);
+border:0px;</string>
+       </property>
+       <property name="text">
+        <string>CONTRASEÑA</string>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="bt_ingresar">
+       <property name="geometry">
+        <rect>
+         <x>85</x>
+         <y>320</y>
+         <width>171</width>
+         <height>41</height>
+        </rect>
+       </property>
+       <property name="layoutDirection">
+        <enum>Qt::RightToLeft</enum>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QPushButton{
+
+border:2px solid rgb(0, 0, 0);
+border-radius:20px;
+background-color: rgb(255, 255, 255);
+font: 87 10pt &quot;Segoe UI Black&quot;;
+
+}
+
+QPushButton:hover{
+
+border:2px solid #ffffff;
+border-radius:20px;
+background-color: rgb(50, 150, 130,60%);
+font: 87 10pt &quot;Segoe UI Black&quot;;
+color: rgb(255, 255, 255);
+
+}</string>
+       </property>
+       <property name="text">
+        <string>        INGRESAR     </string>
+       </property>
+       <property name="icon">
+        <iconset>
+         <normaloff>Icons/ingresar.png</normaloff>Icons/ingresar.png</iconset>
+       </property>
+       <property name="iconSize">
+        <size>
+         <width>30</width>
+         <height>30</height>
+        </size>
+       </property>
+       <property name="shortcut">
+        <string>Return</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="users">
+       <property name="geometry">
+        <rect>
+         <x>43</x>
+         <y>170</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+font: 75 12pt &quot;Arial&quot;;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+}
+
+QLineEdit:hover{
+font: 75 12pt &quot;Arial&quot;;
+border-radius:10px;
+background-color: rgb(50, 150, 130,7%);
+color: rgb(255, 255, 255);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>ejemplo@opticacaroni.com</string>
+       </property>
+      </widget>
+      <widget class="QLineEdit" name="password">
+       <property name="geometry">
+        <rect>
+         <x>43</x>
+         <y>260</y>
+         <width>241</width>
+         <height>31</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLineEdit {
+font: 75 12pt &quot;Arial&quot;;
+border-radius:10px;
+background-color: rgb(255, 255, 255);
+}
+
+	
+
+QLineEdit:hover {
+color: rgb(255, 255, 255);
+font: 75 12pt &quot;Arial&quot;;
+border-radius:10px;
+background-color: rgb(50, 150, 130,5%);
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="maxLength">
+        <number>20</number>
+       </property>
+       <property name="echoMode">
+        <enum>QLineEdit::PasswordEchoOnEdit</enum>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+       <property name="placeholderText">
+        <string>Ingrese su contraseña</string>
+       </property>
+      </widget>
+      <widget class="QPushButton" name="salir">
+       <property name="geometry">
+        <rect>
+         <x>127</x>
+         <y>420</y>
+         <width>75</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">
+QPushButton{
+border-radius:10px;
+font: 75 10pt &quot; MS Shell Dlg 2&quot;;
+background-color: rgba(0, 0, 0,30%);
+}
+
+QPushButton:hover{
+border-radius:10px;
+	background-color: rgb(252, 14, 26,70%);
+font: 75 10pt &quot; MS Shell Dlg 2&quot;;;}</string>
+       </property>
+       <property name="text">
+        <string>SALIR</string>
+       </property>
+       <property name="shortcut">
+        <string>Esc</string>
+       </property>
+      </widget>
+      <widget class="QProgressBar" name="progressBar">
+       <property name="geometry">
+        <rect>
+         <x>30</x>
+         <y>380</y>
+         <width>265</width>
+         <height>20</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QProgressBar{
+background-color: rgba(0,0,0,0%);
+border-radius:10px;
+border: 0px solid #00007f;
+}
+
+QProgressBar::chunk {
+
+background-color: qlineargradient(spread:reflect, x1:0.995263, y1:0.563, x2:0, y2:0.574, stop:0.301843 rgba(12, 185, 107), stop:1 white);
+border-radius:10px;
+border: 0px solid #00007f;
+}</string>
+       </property>
+       <property name="value">
+        <number>0</number>
+       </property>
+       <property name="textVisible">
+        <bool>false</bool>
+       </property>
+      </widget>
+      <widget class="QLabel" name="usuario_incorrecto">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>200</y>
+         <width>150</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0%);
+color: rgb(255, 0, 0);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+border:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="contrasena_incorrecta">
+       <property name="geometry">
+        <rect>
+         <x>95</x>
+         <y>290</y>
+         <width>150</width>
+         <height>16</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">background-color: rgba(0,0,0,0%);
+color: rgb(255, 0, 0);
+font: 75 9pt &quot;MS Shell Dlg 2&quot;;
+border:0px;</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+       <property name="alignment">
+        <set>Qt::AlignCenter</set>
+       </property>
+      </widget>
+      <widget class="QLabel" name="cargando">
+       <property name="geometry">
+        <rect>
+         <x>90</x>
+         <y>395</y>
+         <width>155</width>
+         <height>25</height>
+        </rect>
+       </property>
+       <property name="styleSheet">
+        <string notr="true">QLabel{
+background-color: rgba(0,0,0,0%);
+font: 87 10pt &quot;Segoe UI Black&quot;;
+border:0px;
+}</string>
+       </property>
+       <property name="text">
+        <string/>
+       </property>
+      </widget>
+     </widget>
+    </item>
+   </layout>
+  </widget>
+ </widget>
+ <resources/>
+ <connections>
+  <connection>
+   <sender>salir</sender>
+   <signal>clicked()</signal>
+   <receiver>MainWindow</receiver>
+   <slot>close()</slot>
+   <hints>
+    <hint type="sourcelabel">
+     <x>194</x>
+     <y>475</y>
+    </hint>
+    <hint type="destinationlabel">
+     <x>228</x>
+     <y>506</y>
+    </hint>
+   </hints>
+  </connection>
+ </connections>
+</ui>
